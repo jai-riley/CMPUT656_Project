@@ -47,7 +47,7 @@ def llama_prompt_run(model, prompt, headers):
   """
   input = {
     "messages": [
-      { "role": "system", "content": "You are an expert at extracting event from given sentences for exvent extraction" },
+      { "role": "system", "content": "You are an expert at extracting event from given sentences for event extraction" },
       { "role": "user", "content": prompt }
     ]
   }
