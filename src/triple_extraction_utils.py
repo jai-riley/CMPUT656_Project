@@ -1,11 +1,9 @@
 from sklearn.metrics import  precision_score, recall_score, f1_score
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-from langchain_google_genai import ChatGoogleGenerativeAI
 from openai import OpenAI
 import copy
 import requests
-import sys
 import re
 
 

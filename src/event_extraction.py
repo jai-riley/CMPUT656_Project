@@ -1,8 +1,6 @@
-
 from sklearn.metrics import  precision_score, recall_score, f1_score
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-from langchain_google_genai import ChatGoogleGenerativeAI
 from openai import OpenAI
 import copy
 import requests
@@ -137,7 +135,8 @@ def gpt_get_completion(prompt, gpt_llm, model="gpt-3.5-turbo-0125"):
       messages=[
         {"role": "system", "content": "Act as a perfect triple extractor model"},
         {"role": "user", "content": prompt}
-      ]
+      ],
+      temperature=0
     )
     return(completion.choices[0].message.content)
 
